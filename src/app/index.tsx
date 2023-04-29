@@ -1,10 +1,8 @@
-import "./index.scss"
-import { Routing } from "pages";
+import "./styles/index.scss"
 
 // Define a functional component called "App"
 const App = () => (
-    // Render the "Routing" component
-    <Routing />
+    <div>Hello</div>
 )
 
 export default App;
