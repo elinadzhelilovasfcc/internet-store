@@ -11,7 +11,6 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
-    "baseUrl": "./src",
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
@@ -22,6 +21,10 @@
     "jsx": "preserve"
   },
   "include": [
-    "src"
+    "src/**/*"
+  ],
+  "exclude": [
+    "./src/types",
+    "node_modules"
   ]
 }

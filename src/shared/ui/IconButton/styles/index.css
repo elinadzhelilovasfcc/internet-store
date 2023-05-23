@@ -1,0 +1,19 @@
+.icon-button {
+    @apply text-gray-dark p-2 flex items-center justify-center cursor-pointer no-underline font-bold;
+}
+
+.icon-button:hover {
+    @apply text-purple;
+}
+
+.icon-button-primary {
+    @apply text-primary;
+}
+
+.icon-button-primary:hover {
+    @apply text-gray-dark;
+}
+
+.icon-button-secondary {
+    @apply text-secondary;
+}

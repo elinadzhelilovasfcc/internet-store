@@ -1,28 +1,34 @@
 import React from 'react'
-import ButtonCustom from 'shared/ui/Button';
+// import { useTranslation } from 'react-i18next'
+import { useState, useEffect } from 'react'
+import Header from '../../components/Header'
+import Sidebar from '../../components/Sidebar'
 
-interface IHomePage {
-}
+const HomePage: React.FC = () => {
+  // const { t, i18n } = useTranslation()
+  const [isSSR, setIsSSr] = useState(true)
 
-const HomePage: React.FC<IHomePage> = ({
-}) => {
+  useEffect(() => {
+    setIsSSr(false)
+  }, [])
+  if (isSSR) return null
+
+  // useEffect(() => {
+  //   const lng = navigator.language
+  //   i18n.changeLanguage(lng)
+  // }, [])
+
+  // const lng = navigator.language
   return (
-    <div>
-        <ButtonCustom
-            id='home-page-button'
-            text='Home Page'
-            className='btn'
-            color='primary'
-            classNameOnHover='btn-hover'
-            size='md'
-            auto={true}
-            animated={true}
-            weights='extrabold'
-            onClick={function (): void {
-              console.log('clicked')
-          } }/>
+    <div className='main'>
+      <Header></Header>
+      <div className='container mx-auto'>
+        <div className='w-full'>
+          <div className=''><Sidebar></Sidebar></div>
+        </div>
+      </div>
     </div>
   )
 }
 
-export default HomePage;
+export default HomePage

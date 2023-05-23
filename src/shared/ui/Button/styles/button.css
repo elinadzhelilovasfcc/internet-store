@@ -1,0 +1,149 @@
+.btn {
+    @apply capitalize border rounded-full
+    inline-flex items-center justify-center cursor-pointer no-underline font-bold;
+}
+
+/* primary */
+.btn-primary {
+    @apply bg-transparent border-primary text-primary;
+}
+
+.btn-primary:hover {
+    @apply bg-primary text-sky-light;
+}
+
+.btn-secondary {
+    @apply bg-transparent border-secondary text-secondary;
+}
+
+.btn-secondary:hover {
+    @apply bg-secondary text-sky-light;
+}
+
+.btn-error {
+    @apply bg-transparent border-error text-error;
+}
+
+.btn-error:hover {
+    @apply bg-error text-sky-light;
+}
+
+.btn-warning {
+    @apply bg-transparent border-warning text-warning;
+}
+
+.btn-warning:hover {
+    @apply bg-warning text-sky-light;
+}
+
+.btn-success {
+    @apply bg-transparent border-success text-success;
+}
+
+/* disabled */
+.btn-disabled {
+    @apply opacity-50 cursor-not-allowed;
+}
+
+/* icon */
+.btn .icon {
+    @apply mb-0.5 mr-2;
+}
+
+/* filled */
+.btn-filled-primary {
+    @apply bg-primary text-sky-light;
+}
+
+.btn-filled-primary:hover {
+    @apply bg-transparent border-primary text-primary;
+}
+
+.btn-filled-secondary {
+    @apply bg-secondary text-sky-light;
+}
+
+.btn-filled-secondary:hover {
+    @apply bg-transparent text-secondary;
+}
+
+.btn-filled-error {
+    @apply bg-error text-sky-light;
+}
+
+.btn-filled-error:hover {
+    @apply bg-transparent text-error;
+}
+
+.btn-filled-warning {
+    @apply bg-warning text-sky-light;
+}
+
+.btn-filled-warning:hover {
+    @apply bg-transparent text-warning;
+}
+
+.btn-filled-success {
+    @apply bg-success text-sky-light;
+}
+
+.btn-filled-success:hover {
+    @apply bg-transparent text-success;
+}
+
+/* collapsed */
+.btn-collapsed {
+    @apply flex items-center justify-center max-md:bg-transparent max-md:!p-2;
+}
+
+.btn-collapsed:hover .icon {
+    @apply max-md:text-sky-light;
+}
+
+.btn-collapsed-primary .icon {
+    @apply max-md:text-primary;
+}
+
+.btn-collapsed-primary:hover {
+    @apply max-md:bg-primary;
+}
+
+.btn-collapsed-secondary .icon {
+    @apply max-md:text-secondary;
+}
+
+.btn-collapsed-secondary:hover {
+    @apply max-md:bg-secondary;
+}
+
+.btn-collapsed-success .icon {
+    @apply max-md:text-success;
+}
+
+.btn-collapsed-success:hover {
+    @apply max-md:bg-success;
+}
+
+.btn-collapsed-warning .icon {
+    @apply max-md:text-warning;
+}
+
+.btn-collapsed-warning:hover {
+    @apply max-md:bg-warning;
+}
+
+.btn-collapsed-error .icon {
+    @apply max-md:text-error;
+}
+
+.btn-collapsed-error:hover {
+    @apply max-md:bg-error;
+}
+
+.btn-collapsed .text {
+    @apply hidden md:inline;
+}
+
+.btn-collapsed .icon {
+    @apply mr-0 md:mr-2 mb-0.5;
+}

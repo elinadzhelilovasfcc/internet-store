@@ -4,26 +4,24 @@ type NormalColors =
   | "secondary"
   | "success"
   | "warning"
-  | "error"
-  | "gradient";
+  | "error";
 
 type NormalSizes = "xs" | "sm" | "md" | "lg" | "xl";
-type NormalWeights = "light" | "normal" | "bold" | "extrabold" | "black";
 type Types = "button" | "submit" | "reset";
+type As = "button" | "div" | "span";
 
-export interface IButton {
-  id?: string;
+export interface ButtonProps {
+  as: As;
+  key?: string;
   type?: Types;
-  className?: string;
-  classNameOnHover?: string;
-  text: string;
-  disabled?: boolean;
+  id?: string;
   color?: NormalColors;
+  children?: React.ReactNode | React.ReactNode[];
+  className?: string;
+  disabled?: boolean;
   size?: NormalSizes;
-  weights?: NormalWeights;
-  bordered?: boolean;
-  auto?: boolean;
-  animated?: boolean;
+  isFilled?: boolean;
   icon?: React.ReactNode;
+  collapsed? : boolean;
   onClick: () => void;
 }

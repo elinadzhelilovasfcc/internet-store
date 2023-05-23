@@ -1,0 +1,50 @@
+{
+	"email": {
+        "label": "Email",
+        "placeholder": "Email",
+        "success": "Correct email",
+        "error": "Please enter a valid email"
+    },
+    "search": {
+        "label": "Search",
+        "placeholder": "Search",
+        "success": "Correct seacrh",
+        "error": "Product not found"
+    },
+    "text": {
+        "label": "Text",
+        "placeholder": "Text",
+        "success": "",
+        "error": ""
+    },
+    "password": {
+        "label": "Password",
+        "placeholder": "Password",
+        "success": "Correct password",
+        "error": "Please, add a valid password"
+    },
+    "url": {
+        "label": "URL",
+        "placeholder": "URL",
+        "success": "Correct URL",
+        "error": "Please, add a valid URL"
+    },
+    "number": {
+        "label": "Number",
+        "placeholder": "Number",
+        "success": "",
+        "error": ""
+    },
+    "time": {
+        "label": "Time",
+        "placeholder": "Time",
+        "success": "",
+        "error": "Please, add a valid time"
+    },
+    "date": {
+        "label": "Date",
+        "placeholder": "Date",
+        "success": "",
+        "error": "Please, add a valid date"
+    }
+}
